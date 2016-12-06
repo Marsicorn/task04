@@ -184,7 +184,7 @@
         width: 63px;
         height: 28px;
         border-color: #bd1921; }
-      .pinterest-widget .comments-thread .comment [name="comment-form"] > [type="text"] {
+      .pinterest-widget .comments-thread .comment [name="comment-form"] > [name="text"] {
         display: block;
         float: right;
         margin: 0;

@@ -280,7 +280,7 @@ $basic-border: 1px solid rgba(49, 49, 50, 0.1);
         border-color: $accent-button-border-color;
       }
 
-      [name="comment-form"] > [type="text"] {
+      [name="comment-form"] > [name="text"] {
         display: block;
         float: right;
         margin: 0;
