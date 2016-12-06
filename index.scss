@@ -88,14 +88,6 @@ $basic-border: 1px solid rgba(49, 49, 50, 0.1);
         background-size: contain;
       }
     }
-
-    .action-like :hover,
-    .comment__add:hover{
-      border-color: $accent-button-border-color;
-      background: $accent-button-hover-bg;
-      box-shadow: $accent-shadow, $button-inset;
-      color: white;
-    }
   }
 
   .pin-actions .action-pin,
@@ -105,6 +97,14 @@ $basic-border: 1px solid rgba(49, 49, 50, 0.1);
     border-radius: $element-radius;
     border: solid 1px;
     box-shadow: $accent-shadow;
+  }
+
+  .pin-actions .action-like:hover,
+  .comment__add:hover{
+    border-color: $accent-button-border-color;
+    background: $accent-button-hover-bg;
+    box-shadow: $accent-shadow, $button-inset;
+    color: white;
   }
 
   .pin-holder {
@@ -132,7 +132,7 @@ $basic-border: 1px solid rgba(49, 49, 50, 0.1);
       opacity: 0.15;
     }
 
-    &:hover .buttons {
+    &:hover .pin-actions {
       visibility: visible;
     }
   }

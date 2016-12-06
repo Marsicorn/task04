@@ -47,12 +47,6 @@
         margin-right: 5px;
         background: url("like.png") 0 0 no-repeat;
         background-size: contain; }
-    .pinterest-widget .pin-actions .action-like :hover,
-    .pinterest-widget .pin-actions .comment__add:hover {
-      border-color: #bd1921;
-      background: #c31a22;
-      box-shadow: 0px 1px 1px 0px rgba(142, 19, 25, 0.15), inset 0px 1px 0px 0px rgba(253, 253, 255, 0.2);
-      color: white; }
   .pinterest-widget .pin-actions .action-pin,
   .pinterest-widget .pin-actions .action-like,
   .pinterest-widget .comment__add {
@@ -60,6 +54,12 @@
     border-radius: 2px;
     border: solid 1px;
     box-shadow: 0px 1px 1px 0px rgba(142, 19, 25, 0.15); }
+  .pinterest-widget .pin-actions .action-like:hover,
+  .pinterest-widget .comment__add:hover {
+    border-color: #bd1921;
+    background: #c31a22;
+    box-shadow: 0px 1px 1px 0px rgba(142, 19, 25, 0.15), inset 0px 1px 0px 0px rgba(253, 253, 255, 0.2);
+    color: white; }
   .pinterest-widget .pin-holder {
     text-align: center;
     background-color: transparent;
@@ -79,7 +79,7 @@
       z-index: -1; }
     .pinterest-widget .pin-holder:hover:before {
       opacity: 0.15; }
-    .pinterest-widget .pin-holder:hover .buttons {
+    .pinterest-widget .pin-holder:hover .pin-actions {
       visibility: visible; }
   .pinterest-widget .pin-info,
   .pinterest-widget .pin-source {
