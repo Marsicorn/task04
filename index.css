@@ -1,0 +1,197 @@
+.pinterest_widget {
+  padding: 0 0 5px 0;
+  margin: 30px auto;
+  width: 240px;
+  border-radius: 5px;
+  font-family: "Dosis", sans-serif;
+  box-shadow: 0px 1px 1px 0px rgba(142, 19, 25, 0.15);
+  background-color: #eff0f1; }
+  .pinterest_widget .buttons {
+    visibility: hidden;
+    display: block;
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    margin: 50% auto;
+    text-align: center; }
+  .pinterest_widget .button.pin,
+  .pinterest_widget .button.like,
+  .pinterest_widget .button.add_comment {
+    display: inline-block;
+    border-radius: 2px;
+    border: solid 1px;
+    box-shadow: 0px 1px 1px 0px rgba(142, 19, 25, 0.15); }
+  .pinterest_widget .button.pin {
+    border-color: #bd1921;
+    box-shadow: 0px 1px 1px 0px rgba(142, 19, 25, 0.15);
+    background: url("button_pin.png") 50% 50% no-repeat, linear-gradient(90deg, #c31a22 0%, #d71d26 100%);
+    color: transparent;
+    width: 72px;
+    height: 28px;
+    margin-right: 8px; }
+  .pinterest_widget .button.pin:hover {
+    background: #c31a22 url("button_pin.png") 50% 50% no-repeat;
+    box-shadow: 0px 1px 1px 0px rgba(142, 19, 25, 0.15), inset 0px 1px 0px 0px rgba(253, 253, 255, 0.2); }
+  .pinterest_widget .button.like {
+    border-color: #d2d5d7;
+    box-shadow: 0px 1px 1px 0px rgba(177, 179, 181, 0.15);
+    background-image: linear-gradient(90deg, #e4e7e9 0%, #ebeef0 100%);
+    color: #3f4041;
+    font-family: "Dosis", sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    width: 83px;
+    height: 28px; }
+  .pinterest_widget .button.like:before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    width: 14px;
+    height: 11px;
+    margin-right: 5px;
+    background: url("like.png") 0 0 no-repeat;
+    background-size: contain; }
+  .pinterest_widget .button.like:hover,
+  .pinterest_widget .button.add_comment:hover {
+    border-color: #bd1921;
+    background: #c31a22;
+    box-shadow: 0px 1px 1px 0px rgba(142, 19, 25, 0.15), inset 0px 1px 0px 0px rgba(253, 253, 255, 0.2);
+    color: white; }
+  .pinterest_widget .image {
+    text-align: center;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(49, 49, 50, 0.1);
+    box-shadow: 0px 1px 1px 0px rgba(177, 179, 181, 0.15);
+    width: 240px;
+    height: 249px;
+    position: relative; }
+  .pinterest_widget .image:before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: white url("pin_image.png") 0 0 no-repeat;
+    background-size: 100% auto;
+    border-radius: 5px 5px 0 0;
+    z-index: -1; }
+  .pinterest_widget .image:hover:before {
+    opacity: 0.15; }
+  .pinterest_widget .image:hover .buttons {
+    visibility: visible; }
+  .pinterest_widget .info,
+  .pinterest_widget .source {
+    padding: 15px 20px;
+    background-color: white;
+    border-bottom: 1px solid rgba(49, 49, 50, 0.1); }
+  .pinterest_widget .info .title {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    line-height: 1.2;
+    font-family: "Dosis", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #3f4041; }
+  .pinterest_widget .info .stat {
+    font-size: 13px;
+    font-family: "Dosis", sans-serif;
+    color: #797b7c;
+    line-height: 1.2;
+    text-align: left;
+    margin-right: 10px; }
+    .pinterest_widget .info .stat:before {
+      content: '';
+      display: inline-block;
+      width: 16px;
+      height: 11px;
+      margin-right: 5px; }
+  .pinterest_widget .info .repins:before {
+    background: url("repins.png") 0 0 no-repeat; }
+  .pinterest_widget .info .likes:before {
+    background: url("likes.png") 0 0 no-repeat; }
+  .pinterest_widget .info .comments:before {
+    background: url("comments.png") 0 0 no-repeat; }
+  .pinterest_widget .source {
+    display: block;
+    font-size: 13px;
+    font-family: "Dosis", sans-serif;
+    color: #797b7c;
+    line-height: 1.2;
+    text-align: left;
+    font-weight: bold;
+    text-decoration: none; }
+    .pinterest_widget .source:before {
+      content: 'Pinned from ';
+      font-weight: normal; }
+  .pinterest_widget .comments_list {
+    display: block;
+    list-style: none;
+    padding: 15px 20px;
+    margin: 0;
+    border-radius: 0 0 5px 5px;
+    background-color: #eff0f1;
+    max-height: 300px;
+    overflow: auto;
+    overflow-x: hidden; }
+    .pinterest_widget .comments_list .comment {
+      display: block;
+      margin-bottom: 5px;
+      padding: 0;
+      clear: both; }
+      .pinterest_widget .comments_list .comment:before {
+        content: '';
+        display: block;
+        float: left;
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        border-radius: 2px;
+        background-size: cover;
+        background: url("HannahKern.png") 50% 50% no-repeat; }
+      .pinterest_widget .comments_list .comment:last-child:before {
+        background: url("user.png") 50% 50% no-repeat; }
+      .pinterest_widget .comments_list .comment .author,
+      .pinterest_widget .comments_list .comment .text {
+        display: block;
+        margin: 0;
+        padding: 0;
+        font-family: "Dosis", sans-serif;
+        color: #3f4041;
+        line-height: 1.2;
+        text-align: left; }
+      .pinterest_widget .comments_list .comment .author {
+        font-size: 14px;
+        font-weight: bold;
+        padding-bottom: 3px;
+        text-decoration: none; }
+      .pinterest_widget .comments_list .comment .text {
+        font-size: 13px;
+        font-weight: normal; }
+      .pinterest_widget .comments_list .comment .add_comment {
+        background: linear-gradient(90deg, #c31a22 0%, #d71d26 100%);
+        font-family: "Dosis", sans-serif;
+        font-size: 13px;
+        line-height: 1.2;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        margin-top: 5px;
+        display: block;
+        clear: both;
+        float: right;
+        width: 63px;
+        height: 28px;
+        border-color: #bd1921; }
+      .pinterest_widget .comments_list .comment [name="comment-input"] {
+        display: block;
+        float: right;
+        margin: 0;
+        padding: 0;
+        width: calc(100% - 42px);
+        resize: vertical;
+        max-height: 20em; }
+
+/*# sourceMappingURL=index.css.map */
