@@ -1,4 +1,4 @@
-.pinterest_widget {
+.pinterest-widget {
   padding: 0 0 5px 0;
   margin: 30px auto;
   width: 240px;
@@ -6,7 +6,7 @@
   font-family: "Dosis", sans-serif;
   box-shadow: 0px 1px 1px 0px rgba(142, 19, 25, 0.15);
   background-color: #eff0f1; }
-  .pinterest_widget .buttons {
+  .pinterest-widget .pin-actions {
     visibility: hidden;
     display: block;
     box-sizing: border-box;
@@ -16,51 +16,51 @@
     top: 0;
     margin: 50% auto;
     text-align: center; }
-  .pinterest_widget .button.pin,
-  .pinterest_widget .button.like,
-  .pinterest_widget .button.add_comment {
+    .pinterest-widget .pin-actions .action-pin {
+      border-color: #bd1921;
+      box-shadow: 0px 1px 1px 0px rgba(142, 19, 25, 0.15);
+      background: url("button_pin.png") 50% 50% no-repeat, linear-gradient(90deg, #c31a22 0%, #d71d26 100%);
+      color: transparent;
+      width: 72px;
+      height: 28px;
+      margin-right: 8px; }
+      .pinterest-widget .pin-actions .action-pin:hover {
+        background: #c31a22 url("button_pin.png") 50% 50% no-repeat;
+        box-shadow: 0px 1px 1px 0px rgba(142, 19, 25, 0.15), inset 0px 1px 0px 0px rgba(253, 253, 255, 0.2); }
+    .pinterest-widget .pin-actions .action-like {
+      border-color: #d2d5d7;
+      box-shadow: 0px 1px 1px 0px rgba(177, 179, 181, 0.15);
+      background-image: linear-gradient(90deg, #e4e7e9 0%, #ebeef0 100%);
+      color: #3f4041;
+      font-family: "Dosis", sans-serif;
+      font-size: 11px;
+      font-weight: bold;
+      width: 83px;
+      height: 28px; }
+      .pinterest-widget .pin-actions .action-like:before {
+        content: '';
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        width: 14px;
+        height: 11px;
+        margin-right: 5px;
+        background: url("like.png") 0 0 no-repeat;
+        background-size: contain; }
+    .pinterest-widget .pin-actions .action-like :hover,
+    .pinterest-widget .pin-actions .comment__add:hover {
+      border-color: #bd1921;
+      background: #c31a22;
+      box-shadow: 0px 1px 1px 0px rgba(142, 19, 25, 0.15), inset 0px 1px 0px 0px rgba(253, 253, 255, 0.2);
+      color: white; }
+  .pinterest-widget .pin-actions .action-pin,
+  .pinterest-widget .pin-actions .action-like,
+  .pinterest-widget .comment__add {
     display: inline-block;
     border-radius: 2px;
     border: solid 1px;
     box-shadow: 0px 1px 1px 0px rgba(142, 19, 25, 0.15); }
-  .pinterest_widget .button.pin {
-    border-color: #bd1921;
-    box-shadow: 0px 1px 1px 0px rgba(142, 19, 25, 0.15);
-    background: url("button_pin.png") 50% 50% no-repeat, linear-gradient(90deg, #c31a22 0%, #d71d26 100%);
-    color: transparent;
-    width: 72px;
-    height: 28px;
-    margin-right: 8px; }
-  .pinterest_widget .button.pin:hover {
-    background: #c31a22 url("button_pin.png") 50% 50% no-repeat;
-    box-shadow: 0px 1px 1px 0px rgba(142, 19, 25, 0.15), inset 0px 1px 0px 0px rgba(253, 253, 255, 0.2); }
-  .pinterest_widget .button.like {
-    border-color: #d2d5d7;
-    box-shadow: 0px 1px 1px 0px rgba(177, 179, 181, 0.15);
-    background-image: linear-gradient(90deg, #e4e7e9 0%, #ebeef0 100%);
-    color: #3f4041;
-    font-family: "Dosis", sans-serif;
-    font-size: 11px;
-    font-weight: bold;
-    width: 83px;
-    height: 28px; }
-  .pinterest_widget .button.like:before {
-    content: '';
-    display: inline-block;
-    position: relative;
-    top: 2px;
-    width: 14px;
-    height: 11px;
-    margin-right: 5px;
-    background: url("like.png") 0 0 no-repeat;
-    background-size: contain; }
-  .pinterest_widget .button.like:hover,
-  .pinterest_widget .button.add_comment:hover {
-    border-color: #bd1921;
-    background: #c31a22;
-    box-shadow: 0px 1px 1px 0px rgba(142, 19, 25, 0.15), inset 0px 1px 0px 0px rgba(253, 253, 255, 0.2);
-    color: white; }
-  .pinterest_widget .image {
+  .pinterest-widget .pin-holder {
     text-align: center;
     background-color: transparent;
     border-bottom: 1px solid rgba(49, 49, 50, 0.1);
@@ -68,25 +68,25 @@
     width: 240px;
     height: 249px;
     position: relative; }
-  .pinterest_widget .image:before {
-    display: block;
-    content: '';
-    width: 100%;
-    height: 100%;
-    background: white url("pin_image.png") 0 0 no-repeat;
-    background-size: 100% auto;
-    border-radius: 5px 5px 0 0;
-    z-index: -1; }
-  .pinterest_widget .image:hover:before {
-    opacity: 0.15; }
-  .pinterest_widget .image:hover .buttons {
-    visibility: visible; }
-  .pinterest_widget .info,
-  .pinterest_widget .source {
+    .pinterest-widget .pin-holder:before {
+      display: block;
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: white url("pin_image.png") 0 0 no-repeat;
+      background-size: 100% auto;
+      border-radius: 5px 5px 0 0;
+      z-index: -1; }
+    .pinterest-widget .pin-holder:hover:before {
+      opacity: 0.15; }
+    .pinterest-widget .pin-holder:hover .buttons {
+      visibility: visible; }
+  .pinterest-widget .pin-info,
+  .pinterest-widget .pin-source {
     padding: 15px 20px;
     background-color: white;
     border-bottom: 1px solid rgba(49, 49, 50, 0.1); }
-  .pinterest_widget .info .title {
+  .pinterest-widget .pin-info .pin-title {
     display: block;
     margin-bottom: 10px;
     text-align: left;
@@ -95,26 +95,26 @@
     font-size: 16px;
     font-weight: bold;
     color: #3f4041; }
-  .pinterest_widget .info .stat {
+  .pinterest-widget .pin-info .pin-stats {
     font-size: 13px;
     font-family: "Dosis", sans-serif;
     color: #797b7c;
     line-height: 1.2;
     text-align: left;
     margin-right: 10px; }
-    .pinterest_widget .info .stat:before {
+    .pinterest-widget .pin-info .pin-stats:before {
       content: '';
       display: inline-block;
       width: 16px;
       height: 11px;
       margin-right: 5px; }
-  .pinterest_widget .info .repins:before {
+  .pinterest-widget .pin-info .repins:before {
     background: url("repins.png") 0 0 no-repeat; }
-  .pinterest_widget .info .likes:before {
+  .pinterest-widget .pin-info .likes:before {
     background: url("likes.png") 0 0 no-repeat; }
-  .pinterest_widget .info .comments:before {
+  .pinterest-widget .pin-info .comments:before {
     background: url("comments.png") 0 0 no-repeat; }
-  .pinterest_widget .source {
+  .pinterest-widget .pin-source {
     display: block;
     font-size: 13px;
     font-family: "Dosis", sans-serif;
@@ -123,10 +123,10 @@
     text-align: left;
     font-weight: bold;
     text-decoration: none; }
-    .pinterest_widget .source:before {
+    .pinterest-widget .pin-source:before {
       content: 'Pinned from ';
       font-weight: normal; }
-  .pinterest_widget .comments_list {
+  .pinterest-widget .comments-thread {
     display: block;
     list-style: none;
     padding: 15px 20px;
@@ -136,12 +136,12 @@
     max-height: 300px;
     overflow: auto;
     overflow-x: hidden; }
-    .pinterest_widget .comments_list .comment {
+    .pinterest-widget .comments-thread .comment {
       display: block;
       margin-bottom: 5px;
       padding: 0;
       clear: both; }
-      .pinterest_widget .comments_list .comment:before {
+      .pinterest-widget .comments-thread .comment:before {
         content: '';
         display: block;
         float: left;
@@ -151,10 +151,9 @@
         border-radius: 2px;
         background-size: cover;
         background: url("HannahKern.png") 50% 50% no-repeat; }
-      .pinterest_widget .comments_list .comment:last-child:before {
+      .pinterest-widget .comments-thread .comment:last-child:before {
         background: url("user.png") 50% 50% no-repeat; }
-      .pinterest_widget .comments_list .comment .author,
-      .pinterest_widget .comments_list .comment .text {
+      .pinterest-widget .comments-thread .comment__author, .pinterest-widget .comments-thread .comment__text {
         display: block;
         margin: 0;
         padding: 0;
@@ -162,15 +161,15 @@
         color: #3f4041;
         line-height: 1.2;
         text-align: left; }
-      .pinterest_widget .comments_list .comment .author {
+      .pinterest-widget .comments-thread .comment__author {
         font-size: 14px;
         font-weight: bold;
         padding-bottom: 3px;
         text-decoration: none; }
-      .pinterest_widget .comments_list .comment .text {
+      .pinterest-widget .comments-thread .comment__text {
         font-size: 13px;
         font-weight: normal; }
-      .pinterest_widget .comments_list .comment .add_comment {
+      .pinterest-widget .comments-thread .comment__add {
         background: linear-gradient(90deg, #c31a22 0%, #d71d26 100%);
         font-family: "Dosis", sans-serif;
         font-size: 13px;
@@ -185,7 +184,7 @@
         width: 63px;
         height: 28px;
         border-color: #bd1921; }
-      .pinterest_widget .comments_list .comment [name='comment-input'] {
+      .pinterest-widget .comments-thread .comment [name="comment-form"] > [type="text"] {
         display: block;
         float: right;
         margin: 0;

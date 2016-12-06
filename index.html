@@ -8,32 +8,32 @@
   <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 </head>
 <body>
-  <div class="pinterest_widget">
-    <div class="image">
-        <div class="buttons">
-          <button class="button pin">Pit it</button>
-          <button class="button like">Like</button>
+  <div class="pinterest-widget">
+    <div class="pin-holder">
+        <div class="pin-actions">
+          <button class="button action-pin">Pit it</button>
+          <button class="button action-like">Like</button>
         </div>
     </div>
 
-    <div class="info">
-      <span class="title">Matilda</span>
-      <span class="stat repins">26</span>
-      <span class="stat likes">10</span>
-      <span class="stat comments">1</span>
+    <div class="pin-info">
+      <span class="pin-title">Matilda</span>
+      <span class="pin-stats repins">26</span>
+      <span class="pin-stats likes">10</span>
+      <span class="pin-stats comments">1</span>
     </div>
 
-    <a href="" class="source">uncovet.com</a>
+    <a href="" class="pin-source">uncovet.com</a>
 
-    <ul class="comments_list">
+    <ul class="comments-thread">
       <li class="comment">
-        <a href="" class="author">Hannah Kern</a>
-        <span class="text">Thats SWEEEEEEET!</span>
+        <a href="" class="comment__author">Hannah Kern</a>
+        <span class="comment__text">Thats SWEEEEEEET!</span>
       </li>
       <li class="comment">
-        <form name="add">
-          <textarea name="comment-input" maxlength="500"></textarea>
-          <input class="button add_comment" type="submit" value="Add">
+        <form name="comment-form" action="javascript:myFunction(); return false;">
+          <textarea type="text" maxlength="500"></textarea>
+          <input class="button comment__add" type="submit" value="Add">
         </form>
       </li>
     </ul>
